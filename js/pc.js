@@ -1,3 +1,12 @@
+function initPage(){
+        var objLoading = document.getElementById("LoadingBar");
+        if (objLoading != null)
+        {
+            objLoading.style.display = "none";
+        }
+    }
+window.onload = initPage();
+// 加载页
 var Expand = (function() {
   var tile = $('.nav_box');
   var tileLink = $('.nav_box > .nav_content');
