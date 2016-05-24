@@ -10,7 +10,7 @@ window.onload = initPage();
 var Expand = (function() {
   var tile = $('.nav_box');
   var tileLink = $('.nav_box > .nav_content');
-  var tileText = tileLink.find('.strip__inner-text');
+  var tileText = tileLink.find('.text');
   var stripClose = $('.close');
 
   var expanded  = false;
@@ -20,7 +20,7 @@ var Expand = (function() {
     var tile = $(this).parent();
 
       if (!expanded) {
-        tile.addClass('nav_box--expanded');
+        tile.addClass('nav_box_open');
         // add delay to inner text
         tileText.css('transition', 'all .5s .3s cubic-bezier(0.23, 1, 0.32, 1)');
         stripClose.addClass('show');
@@ -31,7 +31,7 @@ var Expand = (function() {
 
   var close = function() {  
     if (expanded) {
-      tile.removeClass('nav_box--expanded');
+      tile.removeClass('nav_box_open');
       // remove delay from inner text
       tileText.css('transition', 'all 0.15s 0 cubic-bezier(0.23, 1, 0.32, 1)');
       stripClose.removeClass('show');

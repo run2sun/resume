@@ -8,32 +8,49 @@
   <link rel="stylesheet" href="css/font-awesome.css">
 </head>
 <body>
-  <div id="LoadingBar"><img src="images/456.gif"></div>
+<!--   <div id="LoadingBar"><img src="images/456.gif"></div> -->
   <div class="nav">
     <div class="nav_box">
       <div class="nav_content">
-        <h1 class="strip__title" data-name="Lorem">A</h1>
-        <div class="strip__inner-text">
+        <h3 class="title">关于我<br><span>About Me</span></h3>
+        <div class="text">
 
           <!-- 内容A -->
 
         </div>
       </div>
     </div>
-    <div class="nav_box">
+    <div class="nav_box skills">
       <div class="nav_content">
-        <h1 class="strip__title" data-name="Ipsum">B</h1>
-        <div class="strip__inner-text">
+        <h3 class="title">专业技能<br><span>Skills</span></h3>
+        <div class="text">
 
-          <!-- 内容B -->
+
+      <div class="round-out">
+        <div class="round-in r1"></div>
+        <div class="round-main"><img src="images/s-1-s.png"><br>80%</div>
+      </div>
+
+
+      <div class="round-out">
+        <div class="round-in r2"></div>
+        <div class="round-main"><img src="images/2-1.png"><br>70%</div>
+      </div>
+
+
+      <div class="round-out">
+        <div class="round-in r3"></div>
+        <div class="round-main"><img src="images/aj.png"><br>60%</div>
+      </div>
+
 
         </div>
       </div>
     </div>
     <div class="nav_box">
       <div class="nav_content">
-        <h1 class="strip__title" data-name="Dolor">C</h1>
-        <div class="strip__inner-text">
+        <h3 class="title">实习经历<br><span>Experience</span></h3>
+        <div class="text">
 
           <!-- 内容C -->
 
@@ -42,8 +59,8 @@
     </div>
     <div class="nav_box">
       <div class="nav_content">
-        <h1 class="strip__title" data-name="Sit">D</h1>
-        <div class="strip__inner-text">
+        <h3 class="title">我的作品<br><span>My Work</span></h3>
+        <div class="text">
 
           <!-- 内容D -->
 
@@ -52,8 +69,8 @@
     </div>
     <div class="nav_box">
       <div class="nav_content">
-        <h1 class="strip__title" data-name="Amet">E</h1>
-        <div class="strip__inner-text">
+        <h3 class="title">联系我<br><span>Contact Me</span></h3>
+        <div class="text">
 
           <!-- 内容E -->
           askfha hf a fhah as hg ahfga
@@ -65,5 +82,18 @@
   </div>
   <script src="js/jquery-1.11.1.js"></script>
   <script src="js/pc.js"></script>
+  <script type="text/javascript">
+    $(".skills").click(function(){
+      $(".r1").delay(1000).animate({
+        height: "80%"
+      },1200);
+      $(".r2").delay(1000).animate({
+        height: "75%"
+      },1200)
+      $(".r3").delay(1000).animate({
+        height: "65%"
+      },1200)
+    })
+  </script>
 </body>
 </html>
